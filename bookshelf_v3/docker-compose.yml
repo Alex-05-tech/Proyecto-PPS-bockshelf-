@@ -14,7 +14,7 @@ services:
       MYSQL_PASSWORD: bookshelf_pass
     volumes:
       - db_data:/var/lib/mysql
-      - ./backend/bookshelf.sql:/docker-entrypoint-initdb.d/bookshelf.sql
+      - ./backend/bookshelf.sql:/docker-entrypoint-initdb.d/bookshelf.sql:ro
     ports:
       - "3307:3306"
     healthcheck:
