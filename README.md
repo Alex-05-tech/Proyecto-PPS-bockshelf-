@@ -208,5 +208,3 @@ dejar valoraciones y comentarios.
   4. Ejecuta las peticiones contra http://localhost:5000
 
 ================================================================================
-
-prueba de action
