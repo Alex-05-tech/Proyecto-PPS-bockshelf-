@@ -94,8 +94,34 @@ Pipeline automático en cada push o pull request a `main`/`master`.
 
 ## 🧪 Pruebas
 
-Pruebas con Pytest organizadas en `tests/backend/` y `tests/frontend/`.
 Se incluye también una colección Postman en `docs/Bookshelf_Tests_Postman.json`
+Pruebas con Pytest organizadas en `tests/backend/` y `tests/frontend/`.
+
+
+Backend — `tests/backend/`
+
+| Archivo            | Tipo          | Qué prueba                                        |
+|--------------------|---------------|---------------------------------------------------|
+| test_health.py     | Unitaria      | El servidor responde correctamente en /api/health |
+| test_auth.py       | Integración   | Registro de usuario, login correcto y fallido     |
+| test_book.py       | Integración   | Listar, buscar, añadir, editar y borrar libros    |
+| test_user_books.py | Integración   | Valoraciones, comentarios y estados de lectura    |
+
+Imagen de comprobación:
+<img width="1365" height="388" alt="image" src="https://github.com/user-attachments/assets/f63251a9-ae4e-4e85-9c8a-ce4141840da0" />
+
+
+Fronrtend — `tests/frontend/`
+
+| Archivo            | Tipo          | Qué prueba                                        |
+|--------------------|---------------|---------------------------------------------------|
+| test_sintaxish.py  | Unitaria      | Sintaxis correcta e imports necesarios en app.py  |
+| test_rutas.py      | Integración   | Las rutas cargan y redirigen correctamente        |
+
+Imagen de comprobación:
+<img width="1375" height="245" alt="image" src="https://github.com/user-attachments/assets/7c2f0405-9179-4ec1-ac1d-c6d31e5721f9" />
+
+
 
 ```bash
 cd bookshelf_v3/backend
@@ -117,4 +143,3 @@ pytest tests/ -v
 | A07 | Autenticación           | Sesiones Flask y mensajes de error genéricos     |
 | A08 | Integridad              | Pipeline CI/CD que verifica cada commit          |
 | A09 | Logging                 | Registro de eventos de seguridad                 |
-| A10 | SSRF                    | Riesgo bajo, mejora pendiente                    |
