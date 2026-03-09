@@ -90,9 +90,26 @@ Imagen de la Web en funcionamiento
 
 Pipeline automático en cada push o pull request a `main`/`master`.
 
-- **Job 1** — Arranca el backend y verifica que responde correctamente
-- **Job 2** — Verifica la sintaxis del frontend
-- **Job 3** — Construye y levanta los 3 contenedores Docker
+🧪 Job 1 — Tests Backend
+
+    * Levanta un contenedor MySQL 8.0 con las mismas credenciales que producción
+    * Inicializa la base de datos con bookshelf.sql
+    * Arranca el backend y comprueba que /api/health responde correctamente
+
+🧪 Job 2 — Tests Frontend
+
+    * Instala las dependencias del frontend
+    * Compila app.py para verificar que no hay errores de sintaxis
+
+🐳 Job 3 — Build Docker (solo si los dos anteriores pasan)
+
+    * Levanta los 3 contenedores con docker compose up
+    * Verifica que el backend responde en http://localhost:5000/api/health
+    * Verifica que el frontend responde en http://localhost:8000
+    * Limpia los contenedores al finalizar
+
+  
+<img width="632" height="187" alt="Captura de pantalla 2026-03-09 173333" src="https://github.com/user-attachments/assets/157abdd7-658a-4a2b-b5dd-a67490228259" />
 
 ---
 
