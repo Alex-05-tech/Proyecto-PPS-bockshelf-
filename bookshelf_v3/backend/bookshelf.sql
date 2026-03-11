@@ -1,6 +1,5 @@
 -- ============================================================
 --  BOOKSHELF — Base de datos completa
---  Importa este archivo desde phpMyAdmin
 -- ============================================================
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -72,7 +71,6 @@ CREATE TABLE `user_books` (
 -- ============================================================
 
 -- ── Admin por defecto (contraseña: admin123) ──────────────
--- Hash SHA-256 de "admin123" + salt "bookshelf_salt_2024"
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `is_admin`, `created_at`) VALUES
 (1, 'admin', 'admin@bookshelf.com', '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9', 1, NOW());
 

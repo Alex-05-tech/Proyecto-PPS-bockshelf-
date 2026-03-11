@@ -16,7 +16,6 @@ Aplicación web para gestionar y descubrir libros, construida con Flask, MySQL y
 localhost:8000             http://backend:5000         db:3306
 (navegador)                (red interna Docker)        (red interna Docker)
 ```
-
 ---
 
 ## 🗂 Estructura del proyecto
