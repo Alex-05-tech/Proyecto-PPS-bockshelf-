@@ -16,6 +16,8 @@ Aplicación web para gestionar y descubrir libros, construida con Flask, MySQL y
 localhost:8000             http://backend:5000         db:3306
 (navegador)                (red interna Docker)        (red interna Docker)
 ```
+<img width="1608" height="172" alt="image" src="https://github.com/user-attachments/assets/d094fb34-c092-4bd9-87b1-a195f9ae112c" />
+
 ---
 
 ## 🗂 Estructura del proyecto
@@ -80,7 +82,7 @@ docker compose down
 - Panel de administración para gestionar el catálogo
 
 Imagen de la Web en funcionamiento
-<img width="941" height="491" alt="image" src="https://github.com/user-attachments/assets/8d7dd511-1dde-4255-a4e4-2d91a7e59b29" />
+<img width="941" height="491" alt="Captura de pantalla 2026-03-04 192450" src="https://github.com/user-attachments/assets/7da80d45-033f-42ac-85d2-fdce0c0a39ec" />
 
 
 ---
@@ -108,14 +110,14 @@ Pipeline automático en cada push o pull request a `main`/`master`.
     * Limpia los contenedores al finalizar
 
   
-<img width="632" height="187" alt="Captura de pantalla 2026-03-09 173333" src="https://github.com/user-attachments/assets/157abdd7-658a-4a2b-b5dd-a67490228259" />
+<img width="632" height="187" alt="Captura de pantalla 2026-03-09 173333" src="https://github.com/user-attachments/assets/370f572e-c308-4cfd-bffa-0a33f663fda4" />
 
 ---
 
 ## 🧪 Pruebas
 
 Se incluye también una colección Postman en `docs/Bookshelf_Tests_Postman.json` (Hay mas pruebas realizadas)
-<img width="1064" height="276" alt="image" src="https://github.com/user-attachments/assets/3e0b9aa2-95ff-4aeb-8740-d51853949c4b" />
+<img width="1064" height="276" alt="Captura de pantalla 2026-03-04 192655" src="https://github.com/user-attachments/assets/a1160155-90c4-45d5-9c56-5fc03fb3a888" />
 
 
 Pruebas con Pytest organizadas en `tests/backend/` y `tests/frontend/`.
@@ -131,7 +133,7 @@ Backend — `tests/backend/`
 | test_user_books.py | Integración   | Valoraciones, comentarios y estados de lectura    |
 
 Imagen de comprobación:
-<img width="1365" height="388" alt="image" src="https://github.com/user-attachments/assets/f63251a9-ae4e-4e85-9c8a-ce4141840da0" />
+<img width="1365" height="388" alt="Captura de pantalla 2026-03-04 192232" src="https://github.com/user-attachments/assets/ae5bca5f-cbb6-4ff1-9739-83025b4268b5" />
 
 
 Fronrtend — `tests/frontend/`
@@ -142,7 +144,7 @@ Fronrtend — `tests/frontend/`
 | test_rutas.py      | Integración   | Las rutas cargan y redirigen correctamente        |
 
 Imagen de comprobación:
-<img width="1375" height="245" alt="image" src="https://github.com/user-attachments/assets/7c2f0405-9179-4ec1-ac1d-c6d31e5721f9" />
+<img width="1375" height="245" alt="Captura de pantalla 2026-03-04 192317" src="https://github.com/user-attachments/assets/6f4d0087-ca21-49f0-befc-ba8bc3ac3ed4" />
 
 
 
