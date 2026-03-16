@@ -164,6 +164,7 @@ Pruebas que verifican que las medidas OWASP implementadas funcionan correctament
 | test_registro_campos_largos         | A03   | Campos demasiado largos son rechazados              |
 | test_registro_email_invalido        | A03   | Email con formato inválido es rechazado             |
 
+<img width="1117" height="442" alt="Captura de pantalla 2026-03-15 145428" src="https://github.com/user-attachments/assets/8995735a-074b-4165-ba15-f31af536f134" />
 
 
 ```bash
